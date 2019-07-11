@@ -3,9 +3,10 @@ import Vue from 'vue'
 import AppComponent from './App/index.vue'
 
 const vm = new Vue ({
-    el: '#app',
+    el: '#app', 
     components: {
         app: AppComponent,
     },
-    render: h => h('app'),
+    
+    render: h => h('app'), 
 })
