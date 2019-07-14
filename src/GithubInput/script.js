@@ -9,6 +9,7 @@ export default {
         onSubmit(event) {
             if (this.username && this.username !== '') {
             }
+            console.log(this.username)
         }
     }
 }
