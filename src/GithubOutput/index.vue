@@ -5,6 +5,7 @@
     </p>
     <p v-else>
       Below are the results for {{ currentUsername }}
+      {{info}}
     </p>
   </div>
 </template>
