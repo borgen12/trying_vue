@@ -9,6 +9,9 @@ export default {
             currentUsername: null,
             githubData: {},
             info: null,
+            picture: null,
+            name: null,
+            repos: null,
         }
     },
     created() {
@@ -25,7 +28,10 @@ export default {
         getGithubData(name) {
             let url = `https://api.github.com/users/${name}`
             axios.get(url).then((response)=> {
-                this.info = response;
+                this.info = response.data;
+                this.picture = response.data.avatar_url;
+                this.name = response.data.name;
+                this.repos = response.data.public_repos;
             }).catch(error => {console.log(error);})
 
         }
