@@ -1,7 +1,8 @@
 <template>
 <div>
-  <p>Hello, Vue??</p>
+  <p>Give Me Your Data</p>
   <github-input></github-input>
+  <github-output></github-output>
 </div>
 </template>
 <script src="./script.js"></script>
